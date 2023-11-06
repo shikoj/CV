@@ -1,0 +1,529 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<project>
+    <projectId>10000</projectId>
+    <projectKey>SCRUM</projectKey>
+    <exportDate>2023-11-06 10:33:59 UTC</exportDate>
+    <folders>
+        <folder fullPath="US 2.8.1./действия" index="1"/>
+    </folders>
+    <testCases>
+        <testCase id="103079169" key="SCRUM-T11">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Evgeniia Shinkarenko</createdBy>
+            <createdOn>2023-10-01 18:01:57 UTC</createdOn>
+            <customFields/>
+            <folder><![CDATA[US 2.8.1./действия]]></folder>
+            <issues>
+                <issue>
+                    <key>SCRUM-9</key>
+                    <summary><![CDATA[не корректное отображение символа "_" в User name возле иконки "аккаунт"]]></summary>
+                </issue>
+            </issues>
+            <labels/>
+            <name><![CDATA[2.8.1. Успешная авторизация]]></name>
+            <objective><![CDATA[проверить функционал авторизации зарегистрированного пользователя]]></objective>
+            <owner>712020:a393171c-f60e-4b44-ace4-b3eaf48ea063</owner>
+            <precondition><![CDATA[<ol><li>зайти на &nbsp;https://advantageonlineshopping.com/#/ под неавторизованным пользователем</li><li>открыть окно авторизации</li><li>в поле логин ввести:_uffie</li><li>в поле пароль ввести:Qwerty1</li><li>указанный при регистрации email touffie@me.com</li></ol>]]></precondition>
+            <priority><![CDATA[High]]></priority>
+            <status><![CDATA[Draft]]></status>
+            <parameters/>
+            <testDataWrapper/>
+            <testScript type="steps">
+                <steps>
+                    <step index="0">
+                        <customFields/>
+                        <description><![CDATA[проверить активность кнопки SIGN IN при заполнении всех полей]]></description>
+                        <expectedResult><![CDATA[при заполнении всех полей кнопка SIGN IN становиться активной]]></expectedResult>
+                    </step>
+                    <step index="1">
+                        <customFields/>
+                        <description><![CDATA[проверить отправку уведомления при успешной авторизации]]></description>
+                        <expectedResult><![CDATA[при успешной авторизации приходит уведомление на почту]]></expectedResult>
+                    </step>
+                    <step index="2">
+                        <customFields/>
+                        <description><![CDATA[проверить отправку данных на сервер]]></description>
+                        <expectedResult><![CDATA[при успешной авторизации данные отправляются на сервер]]></expectedResult>
+                    </step>
+                    <step index="3">
+                        <customFields/>
+                        <description><![CDATA[проверить отображение логина возле иконки аккаунт после успешной авторизации]]></description>
+                        <expectedResult><![CDATA[возле иконки аккаунта отображается корректный логин]]></expectedResult>
+                    </step>
+                    <step index="4">
+                        <customFields/>
+                        <description><![CDATA[проверить появление меню личного кабинета после успешной авторизации]]></description>
+                        <expectedResult><![CDATA[после успешной авторизации при наведении курсора на иконку &quot;аккаунт&quot; всплывает меню &quot;личный кабинет&quot;]]></expectedResult>
+                    </step>
+                </steps>
+            </testScript>
+        </testCase>
+        <testCase id="103079213" key="SCRUM-T12">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Evgeniia Shinkarenko</createdBy>
+            <createdOn>2023-10-01 18:27:48 UTC</createdOn>
+            <customFields/>
+            <folder><![CDATA[US 2.8.1./действия]]></folder>
+            <issues/>
+            <labels/>
+            <name><![CDATA[открытие формы авторизации]]></name>
+            <objective><![CDATA[проверка появления окна авторизации]]></objective>
+            <owner>712020:a393171c-f60e-4b44-ace4-b3eaf48ea063</owner>
+            <precondition><![CDATA[<ol><li>зайти на сайт advantageshopdemo.com под не авторизованной учетной записью</li><li>навести курсор на иконку аккаунта</li></ol>]]></precondition>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Draft]]></status>
+            <parameters/>
+            <testDataWrapper/>
+            <testScript type="steps">
+                <steps>
+                    <step index="0">
+                        <customFields/>
+                        <description><![CDATA[кликнуть на иконку аккаунта&nbsp;]]></description>
+                        <expectedResult><![CDATA[открывается форма регистрации]]></expectedResult>
+                    </step>
+                </steps>
+            </testScript>
+        </testCase>
+        <testCase id="103079223" key="SCRUM-T13">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Evgeniia Shinkarenko</createdBy>
+            <createdOn>2023-10-01 18:34:02 UTC</createdOn>
+            <customFields/>
+            <folder><![CDATA[US 2.8.1./действия]]></folder>
+            <issues/>
+            <labels/>
+            <name><![CDATA[повторное открытие окна авторизации после входа в систему]]></name>
+            <objective><![CDATA[]]></objective>
+            <owner>712020:a393171c-f60e-4b44-ace4-b3eaf48ea063</owner>
+            <precondition><![CDATA[1. войти на https://advantageonlineshopping.com/#/ под авторизованной учетной записью<br>2.открыть окно авторизации]]></precondition>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Draft]]></status>
+            <parameters/>
+            <testDataWrapper/>
+            <testScript type="steps">
+                <steps>
+                    <step index="0">
+                        <customFields/>
+                        <description><![CDATA[кликнуть на иконку аккаунт&nbsp;]]></description>
+                        <expectedResult><![CDATA[выпадает меню личного кабинета]]></expectedResult>
+                    </step>
+                </steps>
+            </testScript>
+        </testCase>
+        <testCase id="103079233" key="SCRUM-T14">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Evgeniia Shinkarenko</createdBy>
+            <createdOn>2023-10-01 18:38:33 UTC</createdOn>
+            <customFields/>
+            <folder><![CDATA[US 2.8.1./действия]]></folder>
+            <issues>
+                <issue>
+                    <key>SCRUM-13</key>
+                    <summary><![CDATA[функция авторизации через FACEBOOK не работает]]></summary>
+                </issue>
+            </issues>
+            <labels/>
+            <name><![CDATA[авторизация через FACEBOOK]]></name>
+            <objective><![CDATA[проверить интеграцию с сервером FACEBOOK]]></objective>
+            <owner>712020:a393171c-f60e-4b44-ace4-b3eaf48ea063</owner>
+            <precondition><![CDATA[открыть форму авторизации]]></precondition>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Draft]]></status>
+            <parameters/>
+            <testDataWrapper/>
+            <testScript type="steps">
+                <steps>
+                    <step index="0">
+                        <customFields/>
+                        <description><![CDATA[кликунть на кнопку SIGN IN WITH FACEBOOK]]></description>
+                        <expectedResult><![CDATA[открывается форма авторизации FACEBOOK]]></expectedResult>
+                    </step>
+                    <step index="1">
+                        <customFields/>
+                        <description><![CDATA[проверка активного курсора при наведении на иконку FACEBOOK]]></description>
+                        <expectedResult><![CDATA[появляется активный курсор]]></expectedResult>
+                    </step>
+                    <step index="2">
+                        <customFields/>
+                        <description><![CDATA[внешний вид формы авторизации FACEBOOK]]></description>
+                        <expectedResult><![CDATA[соответствует макету]]></expectedResult>
+                    </step>
+                </steps>
+            </testScript>
+        </testCase>
+        <testCase id="103079338" key="SCRUM-T15">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Evgeniia Shinkarenko</createdBy>
+            <createdOn>2023-10-01 19:14:24 UTC</createdOn>
+            <customFields/>
+            <folder><![CDATA[US 2.8.1./действия]]></folder>
+            <issues/>
+            <labels/>
+            <name><![CDATA[Авторизация с REMEMBER ME]]></name>
+            <objective><![CDATA[]]></objective>
+            <owner>712020:a393171c-f60e-4b44-ace4-b3eaf48ea063</owner>
+            <precondition><![CDATA[<ol><li>зайти на https://advantageonlineshopping.com/#/ не авторизованным пользователем</li><li>ввести логин_uffie</li><li>пароль Qwerty1</li><li>выбрать чекбокс REMEMBER ME</li><li>кликнуть на кнопкуSIGH IN</li></ol>]]></precondition>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Draft]]></status>
+            <parameters/>
+            <testDataWrapper/>
+            <testScript type="steps">
+                <steps>
+                    <step index="0">
+                        <customFields/>
+                        <description><![CDATA[проверить сохранены ли данные пользователя при следующей авторизации]]></description>
+                        <expectedResult><![CDATA[в форме авторизации поля логин и пароль автоматически заполнены]]></expectedResult>
+                    </step>
+                    <step index="1">
+                        <customFields/>
+                        <description><![CDATA[проверить возможность повторной авторизации при автоматически заполненных полях]]></description>
+                        <expectedResult><![CDATA[авторизация прошла успешно]]></expectedResult>
+                    </step>
+                    <step index="2">
+                        <customFields/>
+                        <description><![CDATA[проверить сохранение входа в системе после закрытия окна браузера]]></description>
+                        <expectedResult><![CDATA[авторизация в системе сохранена]]></expectedResult>
+                    </step>
+                    <step index="3">
+                        <customFields/>
+                        <description><![CDATA[проверить сохранение авторизации в системе после обновления окна браузера]]></description>
+                        <expectedResult><![CDATA[авторизация пользователя в системе&nbsp;]]></expectedResult>
+                    </step>
+                </steps>
+            </testScript>
+        </testCase>
+        <testCase id="103079342" key="SCRUM-T16">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Evgeniia Shinkarenko</createdBy>
+            <createdOn>2023-10-01 19:15:07 UTC</createdOn>
+            <customFields/>
+            <folder><![CDATA[US 2.8.1./действия]]></folder>
+            <issues/>
+            <labels/>
+            <name><![CDATA[авторизация без REMEMBER ME]]></name>
+            <owner>712020:a393171c-f60e-4b44-ace4-b3eaf48ea063</owner>
+            <precondition><![CDATA[<ol><li>зайти на https://advantageonlineshopping.com/#/ не авторизованным пользователем</li><li>ввести логин_uffie</li><li>пароль Qwerty1</li><li>не выбирать чекбокс REMEMBER ME</li><li>кликнуть на кнопкуSIGH IN</li></ol>]]></precondition>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Draft]]></status>
+            <parameters/>
+            <testDataWrapper/>
+            <testScript type="steps">
+                <steps>
+                    <step index="0">
+                        <customFields/>
+                        <description><![CDATA[проверить что при повторной авторизации данные пользователя в форме авторизации не сохранены]]></description>
+                        <expectedResult><![CDATA[поле логин и пароль пустые]]></expectedResult>
+                    </step>
+                    <step index="1">
+                        <customFields/>
+                        <description><![CDATA[проверить автоматический logout из системе при обновлении окна браузера]]></description>
+                        <expectedResult><![CDATA[пользователь не авторизован]]></expectedResult>
+                    </step>
+                    <step index="2">
+                        <customFields/>
+                        <description><![CDATA[проверить автоматический logout при закрытии окна браузера]]></description>
+                        <expectedResult><![CDATA[пользователь не авторизован]]></expectedResult>
+                    </step>
+                </steps>
+            </testScript>
+        </testCase>
+        <testCase id="103079392" key="SCRUM-T17">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Evgeniia Shinkarenko</createdBy>
+            <createdOn>2023-10-01 19:28:56 UTC</createdOn>
+            <customFields/>
+            <folder><![CDATA[US 2.8.1./действия]]></folder>
+            <issues/>
+            <labels/>
+            <name><![CDATA[авторизация с пустым PASSWORD]]></name>
+            <objective><![CDATA[]]></objective>
+            <owner>712020:a393171c-f60e-4b44-ace4-b3eaf48ea063</owner>
+            <precondition><![CDATA[<ol><li>перейти на &nbsp;https://advantageonlineshopping.com/#/ не авторизованным пользователем</li><li>открыть окно авторизации</li></ol>]]></precondition>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Draft]]></status>
+            <parameters/>
+            <testDataWrapper/>
+            <testScript type="steps">
+                <steps>
+                    <step index="0">
+                        <customFields/>
+                        <description><![CDATA[заполнить поле логин _touffie]]></description>
+                        <expectedResult><![CDATA[в поле отобразился введенный логин]]></expectedResult>
+                    </step>
+                    <step index="1">
+                        <customFields/>
+                        <description><![CDATA[оставить поле PASSWORD пустым]]></description>
+                        <expectedResult><![CDATA[кнопка SIGN IN не активна]]></expectedResult>
+                    </step>
+                </steps>
+            </testScript>
+        </testCase>
+        <testCase id="103079413" key="SCRUM-T18">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Evgeniia Shinkarenko</createdBy>
+            <createdOn>2023-10-01 19:37:23 UTC</createdOn>
+            <customFields/>
+            <folder><![CDATA[US 2.8.1./действия]]></folder>
+            <issues/>
+            <labels/>
+            <name><![CDATA[авторизация с не валидным USER NAME]]></name>
+            <objective><![CDATA[при попытке авторизации с некорректным user name появляется текст с ошибкой]]></objective>
+            <owner>712020:a393171c-f60e-4b44-ace4-b3eaf48ea063</owner>
+            <precondition><![CDATA[<ul><li>зайти на https://advantageonlineshopping.com/#/ не авторизованным пользователем</li><li>ввести логин_ufFie</li><li>пароль Qwerty1</li></ul>]]></precondition>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Draft]]></status>
+            <parameters/>
+            <testDataWrapper/>
+            <testScript type="steps">
+                <steps>
+                    <step index="0">
+                        <customFields/>
+                        <description><![CDATA[вести в поле USER NAME _uFfie]]></description>
+                        <expectedResult><![CDATA[данный отобразились в поле ввода]]></expectedResult>
+                    </step>
+                    <step index="1">
+                        <customFields/>
+                        <description><![CDATA[вести в поле пароль валидный пароль Qwerty1]]></description>
+                        <expectedResult><![CDATA[в поле пароль введены символы]]></expectedResult>
+                    </step>
+                    <step index="2">
+                        <customFields/>
+                        <description><![CDATA[кликнуть на кнопку SIGN IN]]></description>
+                        <expectedResult><![CDATA[появляется уведомление с ошибкой]]></expectedResult>
+                    </step>
+                </steps>
+            </testScript>
+        </testCase>
+        <testCase id="103079414" key="SCRUM-T19">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Evgeniia Shinkarenko</createdBy>
+            <createdOn>2023-10-01 19:37:48 UTC</createdOn>
+            <customFields/>
+            <folder><![CDATA[US 2.8.1./действия]]></folder>
+            <issues/>
+            <labels/>
+            <name><![CDATA[авторизация с не валидным PASSWORD]]></name>
+            <objective><![CDATA[при попытке авторизации с некорректным PASSWORD появляется текст с ошибкой]]></objective>
+            <owner>712020:a393171c-f60e-4b44-ace4-b3eaf48ea063</owner>
+            <precondition><![CDATA[<ol><li>зайти на https://advantageonlineshopping.com/#/ не авторизованным пользователем</li><li>ввести логин_uffie</li><li>пароль qwerty1</li></ol>]]></precondition>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Draft]]></status>
+            <parameters/>
+            <testDataWrapper/>
+            <testScript type="steps">
+                <steps>
+                    <step index="0">
+                        <customFields/>
+                        <description><![CDATA[вести в поле USER NAME &quot;_uffie&quot;]]></description>
+                        <expectedResult><![CDATA[данный отобразились в поле ввода]]></expectedResult>
+                    </step>
+                    <step index="1">
+                        <customFields/>
+                        <description><![CDATA[вести в поле пароль &quot;qwerty1&quot;]]></description>
+                        <expectedResult><![CDATA[в поле пароль введены символы]]></expectedResult>
+                    </step>
+                    <step index="2">
+                        <customFields/>
+                        <description><![CDATA[кликнуть на кнопку SIGN IN]]></description>
+                        <expectedResult><![CDATA[появляется уведомление с ошибкой]]></expectedResult>
+                    </step>
+                </steps>
+            </testScript>
+        </testCase>
+        <testCase id="103079426" key="SCRUM-T20">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Evgeniia Shinkarenko</createdBy>
+            <createdOn>2023-10-01 19:40:56 UTC</createdOn>
+            <customFields/>
+            <folder><![CDATA[US 2.8.1./действия]]></folder>
+            <issues/>
+            <labels/>
+            <name><![CDATA[авторизация с пустым USER NAME]]></name>
+            <objective><![CDATA[]]></objective>
+            <owner>712020:a393171c-f60e-4b44-ace4-b3eaf48ea063</owner>
+            <precondition><![CDATA[<ol><li>войти на &nbsp;https://advantageonlineshopping.com/#/ не авторизованным пользователем</li><li>открыть окно авторизации</li></ol>]]></precondition>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Draft]]></status>
+            <parameters/>
+            <testDataWrapper/>
+            <testScript type="steps">
+                <steps>
+                    <step index="0">
+                        <customFields/>
+                        <description><![CDATA[оставить поле логин пустым]]></description>
+                        <expectedResult><![CDATA[появилось уведомление об ошибке]]></expectedResult>
+                    </step>
+                    <step index="1">
+                        <customFields/>
+                        <description><![CDATA[заполнить поле PASSWORD Qwerty1]]></description>
+                        <expectedResult><![CDATA[кнопка SIGN IN не активна]]></expectedResult>
+                    </step>
+                </steps>
+            </testScript>
+        </testCase>
+        <testCase id="103089608" key="SCRUM-T31">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Evgeniia Shinkarenko</createdBy>
+            <createdOn>2023-10-02 10:24:37 UTC</createdOn>
+            <customFields/>
+            <folder><![CDATA[US 2.8.1./действия]]></folder>
+            <issues>
+                <issue>
+                    <key>SCRUM-12</key>
+                    <summary><![CDATA[функция Forgot Password не работает]]></summary>
+                </issue>
+            </issues>
+            <labels/>
+            <name><![CDATA[FORGOT PASSWORD]]></name>
+            <owner>712020:a393171c-f60e-4b44-ace4-b3eaf48ea063</owner>
+            <precondition><![CDATA[<ol><li>перейти на https://advantageonlineshopping.com/#/ под не авторизованной учетной записью</li><li>открыть окно авторизации</li></ol>]]></precondition>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Draft]]></status>
+            <parameters/>
+            <testDataWrapper/>
+            <testScript type="steps">
+                <steps>
+                    <step index="0">
+                        <customFields/>
+                        <description><![CDATA[проверить открытия окна восстановления пароля при клике на кнопку Forgot Password при не заполненных обязательных полях]]></description>
+                        <expectedResult><![CDATA[пользователь переходит в функционал восстановления пароля]]></expectedResult>
+                    </step>
+                    <step index="1">
+                        <customFields/>
+                        <description><![CDATA[проверить открытие окна восстановления пароля при верно заполненных обязательных полях]]></description>
+                        <expectedResult><![CDATA[пользователь переходит в функционал восстановления пароля]]></expectedResult>
+                    </step>
+                </steps>
+            </testScript>
+        </testCase>
+        <testCase id="103089802" key="SCRUM-T32">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Evgeniia Shinkarenko</createdBy>
+            <createdOn>2023-10-02 10:29:23 UTC</createdOn>
+            <customFields/>
+            <folder><![CDATA[US 2.8.1./действия]]></folder>
+            <issues/>
+            <labels/>
+            <name><![CDATA[CREATE ACCOUNT]]></name>
+            <owner>712020:a393171c-f60e-4b44-ace4-b3eaf48ea063</owner>
+            <precondition><![CDATA[<ol><li>перейти на https://advantageonlineshopping.com/#/ под не авторизованной учетной записью</li><li>открыть окно авторизации</li></ol>]]></precondition>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Draft]]></status>
+            <parameters/>
+            <testDataWrapper/>
+            <testScript type="steps">
+                <steps>
+                    <step index="0">
+                        <customFields/>
+                        <description><![CDATA[проверить переход в функционал создания аккаунта при клике на Create Account]]></description>
+                        <expectedResult><![CDATA[открывается окно создания нового аккаунта]]></expectedResult>
+                    </step>
+                </steps>
+            </testScript>
+        </testCase>
+        <testCase id="103090077" key="SCRUM-T33">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Evgeniia Shinkarenko</createdBy>
+            <createdOn>2023-10-02 10:39:15 UTC</createdOn>
+            <customFields/>
+            <folder><![CDATA[US 2.8.1./действия]]></folder>
+            <issues/>
+            <labels/>
+            <name><![CDATA[закрытие окна авторизации]]></name>
+            <owner>712020:a393171c-f60e-4b44-ace4-b3eaf48ea063</owner>
+            <precondition><![CDATA[<ol><li>перейти на https://advantageonlineshopping.com/#/ под не авторизованной учетной записью</li><li>открыть окно авторизации</li></ol>]]></precondition>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Draft]]></status>
+            <parameters/>
+            <testDataWrapper/>
+            <testScript type="steps">
+                <steps>
+                    <step index="0">
+                        <customFields/>
+                        <description><![CDATA[проверить возможность закрыть окно авторизации при клике на крестик при пустых полях USER NAME и PASSWORD]]></description>
+                        <expectedResult><![CDATA[закрытие окна авторизации]]></expectedResult>
+                    </step>
+                    <step index="1">
+                        <customFields/>
+                        <description><![CDATA[проверить закрытия окна авторизации при клике на крестик при верно заполненных обязательных полях]]></description>
+                        <expectedResult><![CDATA[закрытие окна авторизации]]></expectedResult>
+                    </step>
+                    <step index="2">
+                        <customFields/>
+                        <description><![CDATA[проверить появление активного курсора при наведении на крестик]]></description>
+                        <expectedResult><![CDATA[появляется активный курсор]]></expectedResult>
+                    </step>
+                    <step index="3">
+                        <customFields/>
+                        <description><![CDATA[проверить закрытия окна авторизации при клике на произвольную область вне окна при пустых обязательных полях]]></description>
+                        <expectedResult><![CDATA[закрытие окна авторизации]]></expectedResult>
+                    </step>
+                    <step index="4">
+                        <customFields/>
+                        <description><![CDATA[проверить закрытия окна авторизации при клике на произвольную область вне окна при заполненных обязательных полях]]></description>
+                        <expectedResult><![CDATA[закрытие окна авторизации]]></expectedResult>
+                    </step>
+                    <step index="5">
+                        <customFields/>
+                        <description><![CDATA[проверить появление активного курсора при наведении на произвольную область вне окна]]></description>
+                        <expectedResult><![CDATA[появился активный курсор]]></expectedResult>
+                    </step>
+                </steps>
+            </testScript>
+        </testCase>
+        <testCase id="103090614" key="SCRUM-T34">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Evgeniia Shinkarenko</createdBy>
+            <createdOn>2023-10-02 10:41:33 UTC</createdOn>
+            <customFields/>
+            <folder><![CDATA[US 2.8.1./действия]]></folder>
+            <issues>
+                <issue>
+                    <key>SCRUM-14</key>
+                    <summary><![CDATA[не шифруется пароль при отправке запроса на сервер]]></summary>
+                </issue>
+            </issues>
+            <labels/>
+            <name><![CDATA[шифрование пароля]]></name>
+            <owner>712020:a393171c-f60e-4b44-ace4-b3eaf48ea063</owner>
+            <precondition><![CDATA[<ol><li>перейти на https://advantageonlineshopping.com/#/ под не авторизованной учетной записью</li><li>открыть окно авторизации</li><li>loggin: _uffie</li><li>password: Qwerty1</li></ol>]]></precondition>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Draft]]></status>
+            <parameters/>
+            <testDataWrapper/>
+            <testScript type="steps">
+                <steps>
+                    <step index="0">
+                        <customFields/>
+                        <description><![CDATA[проверить шифрование пароля при отправке запроса на сервер]]></description>
+                        <expectedResult><![CDATA[в теле запроса пароль зашифрован]]></expectedResult>
+                    </step>
+                    <step index="1">
+                        <customFields/>
+                        <description><![CDATA[проверить шифрование пароля в базе данных]]></description>
+                        <expectedResult><![CDATA[в базе данных пароль зашифрован]]></expectedResult>
+                    </step>
+                    <step index="2">
+                        <customFields/>
+                        <description><![CDATA[проверить шифрование пароля при вводе в поле Password в форме авторизации в окне браузера]]></description>
+                        <expectedResult><![CDATA[пароль скрыт спец символом &quot; * &quot;]]></expectedResult>
+                    </step>
+                </steps>
+            </testScript>
+        </testCase>
+    </testCases>
+</project>
